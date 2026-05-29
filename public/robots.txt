@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /node_modules/
+Disallow: /dist/
+
+# Sitemaps
+Sitemap: https://anamika-dashore.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
