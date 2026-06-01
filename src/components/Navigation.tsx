@@ -40,24 +40,8 @@ export default function Navigation({ isOpen, setIsOpen, onNavigate, isDarkMode, 
               {!isDarkMode && (
                 <div className={`absolute inset-0 bg-background z-0 origin-left pointer-events-none transition-all duration-300 ${isScrolled ? 'scale-100' : 'scale-125 sm:scale-[1.35]'}`} />
               )}
-              <img 
-                src="/assets/logo.png" 
-                alt="ADashore" 
-                className={`relative w-auto object-contain transition-all duration-300 origin-left z-10 ${isScrolled ? 'h-8 sm:h-10 scale-100' : 'h-16 sm:h-20 scale-125 sm:scale-[1.35]'}`}
-                style={{
-                  mixBlendMode: !isDarkMode ? 'multiply' : 'screen',
-                  filter: !isDarkMode ? 'grayscale(1) invert(1) brightness(1.2) contrast(2)' : 'none'
-                }}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  if (target.nextElementSibling) {
-                    (target.nextElementSibling as HTMLElement).style.display = 'flex';
-                  }
-                }}
-              />
-              {/* Fallback while waiting for upload */}
-              <div className="w-10 h-10 bg-accent-red hidden items-center justify-center font-bold text-white font-sans transition-colors relative z-20 shadow-sm ml-2">
+              {/* Logo - using initials fallback */}
+              <div className="w-10 h-10 bg-accent-red flex items-center justify-center font-bold text-white font-sans transition-colors relative z-20 shadow-sm ml-2">
                 AD
               </div>
             </div>
