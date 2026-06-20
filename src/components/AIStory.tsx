@@ -1,6 +1,10 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WipeReveal from "./ui/WipeReveal";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const STORY_CARDS = [
   {
@@ -84,26 +88,52 @@ const StoryCard = ({ title, year, description, key }: { title: string; year: str
 export default function AIStory() {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   
   const [duration, setDuration] = useState(0);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  });
-
+  // Optimized GSAP scroll animation for smooth video playback with text
   useEffect(() => {
-    return scrollYProgress.on("change", (latest) => {
-      requestAnimationFrame(() => {
-        if (videoRef.current) {
-          const currentDuration = videoRef.current.duration || duration;
-          if (currentDuration > 0) {
-            videoRef.current.currentTime = latest * currentDuration;
+    if (!videoRef.current || !containerRef.current) return;
+
+    const video = videoRef.current;
+
+    // Create GSAP timeline that syncs video with scroll
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true, // Direct scrubbing with scroll
+        markers: false,
+        onUpdate: (self) => {
+          if (video.duration > 0) {
+            video.currentTime = self.progress * video.duration;
           }
         }
-      });
+      }
     });
-  }, [scrollYProgress, duration]);
+
+    // Add smooth entrance animation to video container
+    gsap.from(videoRef.current.parentElement, {
+      duration: 1.2,
+      opacity: 0.4,
+      scale: 0.95,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 75%",
+        end: "top 25%",
+        scrub: 1,
+        markers: false,
+      }
+    });
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
 
   return (
     <section id="ai-story" ref={containerRef} className="w-full relative bg-background border-t border-border mt-24">
