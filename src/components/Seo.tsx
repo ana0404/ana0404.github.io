@@ -9,6 +9,7 @@ interface SeoProps {
   author?: string;
   twitterHandle?: string;
   canonical?: string;
+  googleVerification?: string;
 }
 
 const defaultMetadata = {
@@ -43,6 +44,7 @@ export default function Seo({
     author: author || defaultMetadata.author,
     twitterHandle: twitterHandle || defaultMetadata.twitterHandle,
     canonical: canonical || defaultMetadata.canonical,
+    googleVerification,
   };
 
   return (
@@ -68,6 +70,9 @@ export default function Seo({
       <meta name="twitter:title" content={metadata.title} />
       <meta name="twitter:description" content={metadata.description} />
       <meta name="twitter:image" content={metadata.image} />
+      {metadata.googleVerification ? (
+        <meta name="google-site-verification" content={metadata.googleVerification} />
+      ) : null}
 
       <script type="application/ld+json">
         {`{
