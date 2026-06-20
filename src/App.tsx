@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Seo } from './components/Seo';
+import Seo from './components/Seo';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
