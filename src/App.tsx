@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Seo } from './components/Seo';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -49,7 +50,7 @@ export default function App() {
 
   return (
     <div className="relative w-full min-h-screen font-sans border-8 md:border-[16px] border-border bg-background box-border p-4 md:p-10 transition-colors duration-300">
-      
+      <Seo />
       <Navigation 
         isOpen={isMenuOpen} 
         setIsOpen={setIsMenuOpen} 
