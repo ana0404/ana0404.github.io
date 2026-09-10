@@ -59,7 +59,7 @@ const STORY_CARDS = [
   }
 ];
 
-const StoryCard = ({ title, year, description, key }: { title: string; year: string; description: string; key?: string | number }) => {
+const StoryCard = ({ title, year, description, id }: { title: string; year: string; description: string; id?: string | number }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -186,7 +186,7 @@ export default function AIStory() {
 
           <div className="w-full md:w-1/2 lg:w-5/12 flex flex-col gap-[85vh]">
             {STORY_CARDS.map((card, i) => (
-              <StoryCard key={i} {...card} />
+              <StoryCard key={i} id={i} {...card} />
             ))}
           </div>
           

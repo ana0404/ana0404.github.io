@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
 
 interface RevealProps {
-  key?: React.Key;
   children: React.ReactNode;
   delay?: number;
   direction?: "up" | "down" | "left" | "right";

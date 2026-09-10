@@ -38,7 +38,7 @@ const CERTIFICATIONS = [
   },
 ];
 
-function CertificationCard({ cert, index, isInView, key }: { cert: any; index: number; isInView: boolean; key?: string | number }) {
+function CertificationCard({ cert, index, isInView }: { cert: any; index: number; isInView: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
