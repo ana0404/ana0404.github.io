@@ -11,9 +11,16 @@ declare global {
 }
 
 const getGaId = () => {
-    // Prefer Vite runtime env when available, fall back to process env for server-side runs
-    const fromImportMeta = typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_GA_ID : undefined;
-    const fromProcess = (process.env as any)?.VITE_GA_ID;
+    // Prefer Vite runtime env when available, fall back to process env for server-side runs.
+    // Accessing `import.meta` via try/catch avoids invalid syntax checks in some bundlers/environments.
+    let fromImportMeta: string | undefined;
+    try {
+        fromImportMeta = (import.meta as any)?.env?.VITE_GA_ID;
+    } catch (e) {
+        fromImportMeta = undefined;
+    }
+
+    const fromProcess = typeof process !== 'undefined' && (process as any)?.env ? (process as any).env?.VITE_GA_ID : undefined;
     const fromWindow = typeof window !== 'undefined' ? (window as any).__VITE_GA_ID__ : undefined;
     return fromImportMeta || fromProcess || fromWindow;
 };
