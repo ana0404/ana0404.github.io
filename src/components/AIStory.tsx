@@ -53,6 +53,31 @@ const STORY_CARDS = [
     description: "Models transition from passive oracles to active entities capable of breaking down tasks, using tools, and autonomous execution.",
   },
   {
+    year: "2024",
+    title: "Open-Weight Models",
+    description: "High-quality open-weight models make advanced capabilities more accessible, customizable, and deployable on infrastructure teams control.",
+  },
+  {
+    year: "2025",
+    title: "Claude Code",
+    description: "Coding agents move beyond autocomplete into deliberate software work: exploring repositories, planning changes, running tools, and shipping outcomes.",
+  },
+  {
+    year: "2025",
+    title: "AI Harnesses",
+    description: "The surrounding system becomes the differentiator: context, tools, memory, evaluation, and guardrails shape what a model can reliably accomplish.",
+  },
+  {
+    year: "2025",
+    title: "OpenClaw",
+    description: "Open agent ecosystems push AI toward extensible, tool-using workflows that can be composed, inspected, and adapted to specialized tasks.",
+  },
+  {
+    year: "BEYOND",
+    title: "Jevons Paradox",
+    description: "As intelligence becomes cheaper and more efficient, demand expands with it, changing how teams design products, infrastructure, and human work.",
+  },
+  {
     year: "BEYOND",
     title: "The Future",
     description: "Seamless multimodal synthesis, embodied AI, and the continuous, exponential march toward Artificial General Intelligence.",

@@ -5,20 +5,28 @@ import { ArrowUpRight } from "lucide-react";
 const PROJECTS = [
   {
     id: "01",
+    title: "Chooose the harness, not the model",
+    description: "A system-level perspective on building AI applications around reliable harnesses rather than relying on model choice alone.",
+    stack: ["AI Systems", "Architecture"],
+    metrics: "Read the system thoughts",
+    url: "https://akhil9tiet.github.io/systemThoughts/aiHarness.html",
+  },
+  {
+    id: "02",
     title: "Predictive Energy Grid Modeling",
     description: "Developed a distributed ML pipeline to forecast grid load with 94% accuracy, optimizing capacity distribution.",
     stack: ["Python", "TensorFlow", "Spark", "AWS", "Grafana"],
     metrics: "Reduced overhead by 15%",
   },
   {
-    id: "02",
+    id: "03",
     title: "Algorithmic Trading Engine",
     description: "High-frequency trading infrastructure utilizing reinforcement learning on tick-level market data.",
     stack: ["C++", "Python", "PyTorch", "Redis"],
     metrics: "20μs latency execution",
   },
   {
-    id: "03",
+    id: "04",
     title: "NLP Clinical Data Extraction",
     description: "Transformer-based extraction of key entities from unstructured EHR text to automate patient risk stratification.",
     stack: ["HuggingFace", "FastAPI", "React", "PostgreSQL"],
@@ -41,11 +49,21 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {PROJECTS.map((project, index) => (
             <Reveal key={project.id} delay={index * 0.1}>
-              <div className="group bg-transparent border-l-2 border-accent-red relative p-6 md:p-8 min-h-[320px] flex flex-col justify-between hover:bg-muted transition-colors cursor-pointer shadow-sm">
+              <a
+                href={project.url}
+                target={project.url ? "_blank" : undefined}
+                rel={project.url ? "noreferrer" : undefined}
+                className="group bg-transparent border-l-2 border-accent-red relative p-6 md:p-8 min-h-[320px] flex flex-col justify-between hover:bg-muted transition-colors cursor-pointer shadow-sm"
+              >
                 <div className="flex justify-between items-start mb-6">
                   <span className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase items-center flex gap-2">
                     {project.id} / ARCHITECTURE
                   </span>
+                  {project.id !== "01" && (
+                    <span className="font-mono text-[9px] text-accent-red tracking-widest uppercase border border-accent-red px-2 py-1">
+                      Coming Soon
+                    </span>
+                  )}
                   <div className="p-1 opacity-0 group-hover:opacity-100 transition-all -translate-y-2 group-hover:translate-y-0 duration-300">
                     <ArrowUpRight className="w-5 h-5 text-accent-red" />
                   </div>
@@ -70,7 +88,7 @@ export default function Projects() {
                      ))}
                    </div>
                 </div>
-              </div>
+              </a>
             </Reveal>
           ))}
         </div>
