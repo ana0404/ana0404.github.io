@@ -40,7 +40,7 @@
 #### 1. **Google Search Console Setup**
    - Go to: https://search.google.com/search-console
    - Verify ownership (via DNS TXT record or HTML file upload)
-   - Submit your sitemap: `https://anamika-dashore.com/sitemap.xml`
+   - Submit your sitemap: `https://ana0404.github.io/sitemap.xml`
    - Monitor impressions, clicks, and average position for target keywords
 
 #### 2. **Update Meta Tags with Your Social Handles**

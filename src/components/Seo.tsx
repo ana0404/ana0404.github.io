@@ -12,16 +12,16 @@ interface SeoProps {
 }
 
 const defaultMetadata = {
-  title: 'Anamika Dashore - Data Scientist & AI Engineer | ML Infrastructure Specialist',
+  title: 'Anamika Dashore | Data Scientist & AI Engineer',
   description:
-    'Data Scientist & AI Engineer specializing in machine learning infrastructure, predictive analytics, and distributed systems. Portfolio showcasing energy grid modeling, algorithmic trading, and NLP solutions.',
-  url: 'https://anamika-dashore.com/',
-  image: 'https://anamika-dashore.com/assets/logo.png',
+    'Anamika Dashore is a data scientist and AI engineer building reliable ML infrastructure, predictive analytics, and intelligent systems for modern teams.',
+  url: 'https://ana0404.github.io/',
+  image: 'https://ana0404.github.io/assets/og-image.png',
   keywords:
     'Anamika Dashore, Data Scientist, AI Engineer, Machine Learning Engineer, Data Engineer, ML Infrastructure, Predictive Analytics, NLP, Distributed Systems, Model Deployment',
   author: 'Anamika Dashore',
   twitterHandle: '@anamika_dashore',
-  canonical: 'https://anamika-dashore.com/',
+  canonical: 'https://ana0404.github.io/',
 };
 
 export default function Seo({
@@ -69,26 +69,6 @@ export default function Seo({
       <meta name="twitter:description" content={metadata.description} />
       <meta name="twitter:image" content={metadata.image} />
 
-      <script type="application/ld+json">
-        {`{
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Anamika Dashore",
-          "url": "${metadata.url}",
-          "image": "${metadata.image}",
-          "description": "${metadata.description}",
-          "jobTitle": [
-            "Data Scientist",
-            "AI Engineer",
-            "Machine Learning Engineer",
-            "Data Engineer"
-          ],
-          "sameAs": [
-            "https://github.com",
-            "https://linkedin.com"
-          ]
-        }`}
-      </script>
     </Helmet>
   );
 }

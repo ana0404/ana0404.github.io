@@ -1,56 +1,34 @@
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Anamika Dashore",
-  "url": "https://anamika-dashore.com",
-  "image": "https://anamika-dashore.com/assets/logo.png",
-  "description": "Data Scientist & AI Engineer specializing in machine learning infrastructure, predictive analytics, and distributed systems",
-  "jobTitle": [
-    "Data Scientist",
-    "AI Engineer",
-    "Machine Learning Engineer",
-    "Data Engineer",
-    "Forward Deployed Engineer"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelance/Independent"
-  },
-  "location": {
-    "@type": "Place",
-    "name": "San Francisco, CA",
-    "alternateName": "Remote"
-  },
-  "knowsAbout": [
-    "Machine Learning",
-    "Data Science",
-    "Artificial Intelligence",
-    "Python",
-    "TensorFlow",
-    "PyTorch",
-    "AWS",
-    "Distributed Systems",
-    "Data Engineering",
-    "Natural Language Processing",
-    "Reinforcement Learning",
-    "High-Frequency Trading",
-    "Energy Grid Forecasting",
-    "Predictive Analytics"
-  ],
-  "sameAs": [
-    "https://github.com",
-    "https://linkedin.com"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Professional Inquiry",
-    "availableLanguage": "English"
-  },
-  "hasCredential": [
+  "@graph": [
     {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Professional Certification",
-      "name": "Relevant Certifications"
+      "@type": "Person",
+      "@id": "https://ana0404.github.io/#person",
+      "name": "Anamika Dashore",
+      "url": "https://ana0404.github.io/",
+      "image": "https://ana0404.github.io/assets/og-image.png",
+      "jobTitle": "Data Scientist and AI Engineer",
+      "sameAs": [
+        "https://github.com/ana0404",
+        "https://www.linkedin.com/in/anamika-dashore/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ana0404.github.io/#website",
+      "url": "https://ana0404.github.io/",
+      "name": "Anamika Dashore | Data Scientist & AI Engineer",
+      "publisher": { "@id": "https://ana0404.github.io/#person" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ana0404.github.io/"
+      }]
     }
   ]
 }
