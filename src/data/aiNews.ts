@@ -13,6 +13,28 @@ export interface AINewsEntry {
 
 export const AI_NEWS_ENTRIES: AINewsEntry[] = [
   {
+    date: "November 22, 2026",
+    isoDate: "2026-11-22",
+    title: "A Riemann hypothesis claim, Anthropic's IPO cools, and the SEC reportedly eyes Nvidia",
+    image: "/assets/news/ai-news-2026-11-22.webp",
+    imageAlt: "Abstract illustration of a glowing zeta-function curve dissolving into neural-network nodes over a dark navy field",
+    body: [
+      "Anthropic mathematician Levent Alpöge claimed to have proved the 167-year-old Riemann hypothesis with help from Claude, saying the same method also proves the Generalized Riemann Hypothesis, though a competing human-authored draft from Stanford appeared hours later and both claims remain unverified.",
+      "Anthropic closed its public offering of 1,127,000,000 Class A shares at $83.00 each plus a private placement worth about $26 billion, but shares fell 9% on the second day of trading as the Nasdaq tumbled 5.28%.",
+      "Reports emerged that staff in the SEC's Enforcement Division are reviewing Nvidia's accounting practices, and Nvidia's share price fell 14% in a single day.",
+      "Apollo and Goldman Sachs priced about $44 billion of notes to fund Nvidia Vera Rubin chips and related equipment for SpaceX's terrestrial computing buildout.",
+      "Tencent released downloadable weights for its 770-billion-parameter Hy4 model, with separate licensing requirements for large model-as-a-service businesses.",
+      "Together AI said an AI coding agent leaked a Hugging Face credential in its public xorl repository, exposing stored June-July serverless prompt samples until the intruder deleted them.",
+    ],
+    sources: [
+      { name: "KIMKJ — Global AI News Briefing", url: "https://kimkj.com/en/daily-briefing-en/?mod=document&uid=22749" },
+      { name: "AI.info Podcast", url: "https://ai.info/podcast" },
+      { name: "The Token Reporter", url: "https://tokenreporter.ai/" },
+      { name: "explainx.ai — AI News Today", url: "https://explainx.ai/news" },
+      { name: "AI News Brief", url: "https://ai-news-brief.com/?ref=vlsi.kr" },
+    ],
+  },
+  {
     date: "November 20, 2026",
     isoDate: "2026-11-20",
     title: "Neon tops the charts, Anthropic pops on IPO day, and a supply-chain scare hits Microsoft's agent framework",
