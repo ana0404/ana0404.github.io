@@ -42,7 +42,7 @@ export default function Contact() {
         <WipeReveal width="100%" wipeColor="var(--accent-red)">
           <div className="bg-accent-red text-white p-8 md:p-16 flex flex-col justify-between min-h-[50vh] relative group transition-colors">
             <div className="flex justify-between items-start mb-12 md:mb-24">
-              <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest uppercase shrink-0">05 / CONTACT ME</span>
+              <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest uppercase shrink-0">07 / CONTACT ME</span>
               <div className="w-3 h-3 rounded-full bg-white animate-pulse shrink-0"></div>
             </div>
             
