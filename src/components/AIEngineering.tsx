@@ -27,6 +27,9 @@ export default function AIEngineering() {
             <p className="font-sans text-sm leading-relaxed text-muted-foreground mb-8">
               Engineering robust, reproducible, and scalable infrastructure to move machine learning models from research environments into mission-critical production systems. 
             </p>
+            <p className="font-sans text-sm leading-relaxed text-muted-foreground mb-8">
+              As an AI engineer, I own the full lifecycle of production AI systems: data ingestion and streaming pipelines, distributed model training and evaluation, guardrails and observability, and low-latency serving — so large language models and retrieval-augmented generation pipelines stay reliable, measurable, and cost-efficient once they reach real users.
+            </p>
             <div className="flex justify-between items-start pt-6 border-t border-border">
               <span className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Status</span>
               <span className="font-mono text-[9px] font-bold text-accent-red">98.4% EFFICIENCY</span>

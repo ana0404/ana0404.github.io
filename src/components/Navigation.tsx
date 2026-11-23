@@ -16,7 +16,8 @@ const NAV_ITEMS = [
   { id: "ai-engineering", label: "03 // AI Engineering" },
   { id: "ai-story", label: "04 // The Evolution" },
   { id: "certifications", label: "05 // Certifications" },
-  { id: "contact", label: "06 // Contact" },
+  { id: "ai-news", label: "06 // AI News" },
+  { id: "contact", label: "07 // Contact" },
 ];
 
 export default function Navigation({ isOpen, setIsOpen, onNavigate, isDarkMode, toggleTheme }: NavigationProps) {
