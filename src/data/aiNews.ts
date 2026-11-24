@@ -13,6 +13,27 @@ export interface AINewsEntry {
 
 export const AI_NEWS_ENTRIES: AINewsEntry[] = [
   {
+    date: "November 24, 2026",
+    isoDate: "2026-11-24",
+    title: "Claude claims a VP ≠ VNP proof, DeepMind agents speed up quantum algorithms, and driverless robotaxis hit the Bay Area",
+    image: "/assets/news/ai-news-2026-11-24.webp",
+    imageAlt: "Abstract illustration of glowing mathematical proof symbols and quantum circuit lines dissolving into neural-network nodes, with a small driverless car gliding along a luminous road, in navy, teal and amber",
+    body: [
+      "Anthropic published a 70-page paper credited solely to Claude claiming a proof that VP ≠ VNP, the algebraic analogue of P vs NP posed by Leslie Valiant in 1979, with Lean code on GitHub that checkers can replay — though no human mathematician has vetted the proof yet.",
+      "Google DeepMind said teams of Gemini 4 agents discovered faster quantum algorithms for fusion, chemistry and drug design, each verified in Lean, reducing estimated computing costs by 11.8 times.",
+      "Uber, autonomous-driving startup Nuro and EV maker Lucid began testing robotaxis without human safety operators across four South Bay cities on November 24, ahead of a planned commercial debut in the first quarter of 2027.",
+      "Amazon agreed to acquire Decart's AI optimization technology and research team in a reported $7.5 billion deal, according to CNBC.",
+      "The Financial Times reported that frontier AI labs and Big Tech are responding to rising state-sponsored espionage threats by recruiting former CIA officers, restricting staff movements and tightening internal access controls.",
+      "The UK's NHS began recruiting for a major AI-assisted breast-screening trial involving nearly 700,000 women over three years, testing whether AI can help specialists detect breast cancer earlier and review mammograms faster.",
+    ],
+    sources: [
+      { name: "AI Weekly — AI News Today, Nov 24 edition", url: "https://aiweekly.co/ai-news-today/edition/2026-11-24" },
+      { name: "The Neuron — Everything That Happened in AI Today", url: "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-24-2026/" },
+      { name: "explainx.ai — AI News Today", url: "https://explainx.ai/news" },
+      { name: "AI Weekly — AI News Today", url: "https://aiweekly.co/ai-news-today" },
+    ],
+  },
+  {
     date: "November 23, 2026",
     isoDate: "2026-11-23",
     title: "Huang returns to Nvidia, Grok faces state lawsuits, and CrowdStrike buys Zscaler",
