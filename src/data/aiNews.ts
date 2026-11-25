@@ -13,6 +13,27 @@ export interface AINewsEntry {
 
 export const AI_NEWS_ENTRIES: AINewsEntry[] = [
   {
+    date: "November 25, 2026",
+    isoDate: "2026-11-25",
+    title: "GPT-6.2 designs working proteins, Astra hunts exoplanets, and Claude artifacts become desktop apps",
+    image: "/assets/news/ai-news-2026-11-25.webp",
+    imageAlt: "Abstract illustration of glowing protein helixes and folded molecular ribbons dissolving into neural-network nodes, a telescope sweeping a starfield, and floating desktop-app window outlines, in navy, teal and amber",
+    body: [
+      "OpenAI reported that GPT-6.2 designed protein minibinders using only reasoning and code, with 35 of 322 designs binding to five human targets in Onava wet-lab tests — a 10.9% hit rate.",
+      "OpenAI's Astra helped amateur astronomers identify potential exoplanets using Codex and publicly available observations from NASA's Kepler and TESS space telescopes.",
+      "OpenAI published a mathematical preprint claiming a matrix multiplication exponent of 9/4, a result that could speed up a core computation if it is independently validated.",
+      "Anthropic rolled out an 'Install as app' beta that lets a Claude artifact run as a standalone desktop application on Mac or Windows, with its own icon and window.",
+      "Forter Intelligence transaction data for the week ending November 22 showed Meta's Muse agent handled 51% of AI-agent shopping orders, ahead of Grok at 24% and ChatGPT at 22%.",
+      "Dell booked $54.94 billion in third-quarter revenue, double a year ago, with $22 billion in AI-optimized server sales and an AI server backlog of $132.3 billion after $60.2 billion in new orders.",
+    ],
+    sources: [
+      { name: "The Neuron — Everything That Happened in AI Today", url: "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/" },
+      { name: "AI Weekly — AI News Today, Nov 25 edition", url: "https://aiweekly.co/ai-news-today/edition/2026-11-25" },
+      { name: "The AI Wire — Daily AI Brief, Nov 25", url: "https://wire.rundatarun.io/briefs/2026-11-25" },
+      { name: "AI Watch — Nov 25", url: "https://www.thecodew.com/2026/11/ai-watch-november-25.html" },
+    ],
+  },
+  {
     date: "November 24, 2026",
     isoDate: "2026-11-24",
     title: "Claude claims a VP ≠ VNP proof, DeepMind agents speed up quantum algorithms, and driverless robotaxis hit the Bay Area",

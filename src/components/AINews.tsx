@@ -2,7 +2,7 @@ import { AI_NEWS_ENTRIES, type AINewsEntry } from "../data/aiNews";
 import Reveal from "./ui/Reveal";
 import WipeReveal from "./ui/WipeReveal";
 
-function NewsCard({ entry }: { entry: AINewsEntry }) {
+function NewsCard({ entry, isLatest }: { entry: AINewsEntry; isLatest: boolean }) {
   return (
     <article className="border border-border bg-card/50 overflow-hidden">
       <div className="grid md:grid-cols-5 gap-0">
@@ -10,7 +10,8 @@ function NewsCard({ entry }: { entry: AINewsEntry }) {
           <img
             src={entry.image}
             alt={entry.imageAlt}
-            loading="lazy"
+            loading={isLatest ? "eager" : "lazy"}
+            fetchPriority={isLatest ? "high" : "auto"}
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
@@ -75,9 +76,9 @@ export default function AINews() {
         </p>
 
         <div className="flex flex-col gap-10 mt-12">
-          {AI_NEWS_ENTRIES.map((entry) => (
+          {AI_NEWS_ENTRIES.map((entry, index) => (
             <Reveal key={entry.isoDate}>
-              <NewsCard entry={entry} />
+              <NewsCard entry={entry} isLatest={index === 0} />
             </Reveal>
           ))}
         </div>
