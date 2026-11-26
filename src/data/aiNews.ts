@@ -13,6 +13,26 @@ export interface AINewsEntry {
 
 export const AI_NEWS_ENTRIES: AINewsEntry[] = [
   {
+    date: "November 26, 2026",
+    isoDate: "2026-11-26",
+    title: "Nvidia chips traced to Chinese-owned partners, Neuralink wins FDA nod, and export controls halt AI server shipments",
+    image: "/assets/news/ai-news-2026-11-26.webp",
+    imageAlt: "Abstract illustration of glowing semiconductor chips and circuit traces dissolving into neural-network nodes, a brain-computer interface headset with soft light pulses, a small satellite constellation above a stylized globe, and a magnifying glass over shipping routes, in navy, teal and amber",
+    body: [
+      "A CBS News investigation identified at least two US-based Nvidia 'preferred partners' that are actually controlled by Chinese-owned firms, with one California company run by a graduate of a Chinese military university.",
+      "Nvidia told Dell and Supermicro to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia as new US Commerce Department licensing takes effect, The National reported.",
+      "The FDA cleared Neuralink to begin LINK, the first US pivotal trial of an implantable brain-computer interface, in adults with severe paralysis from ALS, Interesting Engineering reported.",
+      "Stanford's Hazy Research lab showed that one large language model can read another model's hidden representations after a single closed-form transformation — a rotation plus a global scale.",
+      "OpenAI began routing ChatGPT Chat and Work usage through one shared meter on Tuesday, starting with Pro subscribers, TechCrunch reported.",
+      "The FCC conditionally authorized SpaceX to deploy up to 1 million satellites intended to serve as orbital data centers.",
+    ],
+    sources: [
+      { name: "AI Weekly — AI News Today, Nov 26 edition", url: "https://aiweekly.co/ai-news-today/edition/2026-11-26" },
+      { name: "AI.info — The Daily, Nov 26", url: "https://ai.info/daily/2026-11-26" },
+      { name: "The CODEW — The Newsroom, Nov 26", url: "https://www.thecodew.com/2026/11/the-newsroom-november-26.html" },
+    ],
+  },
+  {
     date: "November 25, 2026",
     isoDate: "2026-11-25",
     title: "GPT-6.2 designs working proteins, Astra hunts exoplanets, and Claude artifacts become desktop apps",

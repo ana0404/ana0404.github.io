@@ -72,7 +72,8 @@ export default function AINews() {
         <p className="font-sans text-sm leading-relaxed text-muted-foreground mt-8 max-w-2xl">
           A daily microblog from Anamika Dashore, AI engineer: the top artificial
           intelligence stories of the day, distilled into a short read with
-          sources. Updated every day.
+          sources. Updated every day. For the systems behind the headlines, see{" "}
+          <a href="#ai-engineering" className="text-foreground/80 hover:text-accent-red hover:underline underline-offset-4 transition-colors">how production AI is engineered</a>.
         </p>
 
         <div className="flex flex-col gap-10 mt-12">
