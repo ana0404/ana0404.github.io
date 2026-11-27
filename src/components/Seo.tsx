@@ -14,7 +14,7 @@ interface SeoProps {
 const defaultMetadata = {
   title: 'Anamika Dashore | Data Scientist & AI Engineer',
   description:
-    'Anamika Dashore is a data scientist and AI engineer building reliable ML infrastructure, predictive analytics, and intelligent systems for modern teams.',
+    'Anamika Dashore is an AI engineer and data scientist building production ML infrastructure, LLM and RAG systems, and predictive analytics — with a daily AI news brief.',
   url: 'https://ana0404.github.io/',
   image: 'https://ana0404.github.io/assets/og-image.png',
   keywords:
