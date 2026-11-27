@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import AIEngineering from './components/AIEngineering';
 import AIStory from './components/AIStory';
 import Certifications from './components/Certifications';
+import AINews from './components/AINews';
 import Contact from './components/Contact';
 import useAnalytics from './hooks/useAnalytics';
 import useSectionAnalytics from './hooks/useSectionAnalytics';
@@ -64,6 +65,7 @@ export default function App() {
         <AIEngineering />
         <AIStory />
         <Certifications />
+        <AINews />
         <Contact />
       </main>
     </div>
