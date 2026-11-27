@@ -13,6 +13,27 @@ export interface AINewsEntry {
 
 export const AI_NEWS_ENTRIES: AINewsEntry[] = [
   {
+    date: "November 27, 2026",
+    isoDate: "2026-11-27",
+    title: "SAP plans 10,000-plus AI job cuts, AI agents breach Swiss targets, and Tencent speeds up DeepSeek inference",
+    image: "/assets/news/ai-news-2026-11-27.webp",
+    imageAlt: "Abstract illustration of a corporate office tower dissolving into neural-network nodes and circuit traces, a shield and magnifying glass over glowing data packets, an inference accelerator chip with radiating speed lines, and a maple leaf made of server racks, in navy, teal and amber",
+    body: [
+      "SAP is preparing to cut at least 10,000 positions, about 9% of its 110,000-strong workforce, as CEO Christian Klein pushes an AI-first restructuring, Bloomberg reported.",
+      "Switzerland's Federal Office for Cybersecurity said it identified five attacks using AI agents over recent days, with target systems actually compromised in four of them.",
+      "Tencent open-sourced DFly2, a draft model that accelerates long-context inference, reporting up to 81% higher throughput for DeepSeek-V4.1-Flash at a 64,000-token context length.",
+      "Google moved its eight Workspace MCP servers to general availability on November 24, and from February 1, 2027, tools driven by an AI agent must reach Gmail, Drive and Calendar through those servers or face quota caps and account suspension.",
+      "Canada added C$700 million to its AI Compute Access Fund, bringing the fund's total to C$1 billion.",
+      "Yandex posted AliceAI-Foundation-80B-A3B-Base, an 80-billion-parameter mixture-of-experts model with roughly 3 billion active parameters per token, trained from scratch and released under Apache 2.0.",
+    ],
+    sources: [
+      { name: "AI Weekly — AI News Today, Nov 27 edition", url: "https://aiweekly.co/ai-news-today/edition/2026-11-27" },
+      { name: "The Neuron — Everything That Happened in AI Today, Nov 27", url: "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-27-2026/" },
+      { name: "KIMKJ — AI Evening Comprehensive Report, Nov 27", url: "https://kimkj.com/en/ai-board-en/?mod=document&uid=23238" },
+      { name: "The AI Wire — Daily AI Brief, Nov 27", url: "https://wire.rundatarun.io/briefs/2026-11-27" },
+    ],
+  },
+  {
     date: "November 26, 2026",
     isoDate: "2026-11-26",
     title: "Nvidia chips traced to Chinese-owned partners, Neuralink wins FDA nod, and export controls halt AI server shipments",
